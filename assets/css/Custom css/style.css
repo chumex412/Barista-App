@@ -3,12 +3,13 @@
 }
 body   {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
     background-color: #E5E5E5;
 }
 
 hr {
     width: 50px;
-    border: 3px solid  #381D12;
+    border: 2px solid  #381D12;
 
 }
 
@@ -80,12 +81,66 @@ input[type=email] {
 .app-images {
     margin-top: 600px;
 }*/
+#appScreen {
+    height: 70%;
+}
+#appScreen h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+}
 .app-gallery img {
     transition: 1s;
 }
 .app-gallery img:hover {
     filter: grayscale(100%);
     transform: scale(1.1);
+}
+.app-gallery {
+    position: relative;
+}
+.screen1 {
+    position: absolute;
+    width: 19%;
+    top: 0;
+    left: 3%;
+    z-index: 5;
+}
+.screen2 {
+    position: absolute;
+    width: 19%;
+    top: 0;
+    left: 18%;
+    z-index: 4;
+}
+.screen3 {
+    position: absolute;
+    width: 19%;
+    top: 0;
+    left: 34%;
+    z-index: 3;
+}
+.screen4{
+    position: absolute;
+    width: 19%;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+}
+.screen5 {
+    position: absolute;
+    width: 19%;
+    top: 0;
+    left: 66%;
+    z-index: 1;
+}
+.screen6 {
+    position: absolute;
+    width: 19%;
+    top: 0;
+    left: 82%;
 }
 #keyFeatures {
  /*margin-top: 200px;*/   
@@ -149,6 +204,9 @@ input[type=email] {
         width: 100%;
         height: 60rem;
     }
+    #appScreen {
+        height: 45%;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -180,6 +238,9 @@ input[type=email] {
         line-height: 24px;
         color: #333333;
 
+    }
+    #appScreen {
+        height: 35%;
     }
     #keyFeatures h3 {
         font-style: normal;
@@ -218,6 +279,9 @@ input[type=email] {
     .d3-cont {
         display: none;
     }
+    #appScreen {
+        height: 35%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -249,6 +313,9 @@ input[type=email] {
         line-height: 18px;
         color: #333333;
 
+    }
+    #appScreen {
+        height: 30%;
     }
     /*input[type=email] {
         width: 80%;
@@ -289,6 +356,9 @@ input[type=email] {
     .hero-bg{
         width: 100%;
         height: 40rem;
+    }
+    #appScreen {
+        height: 28%;
     }
 }
 @media (max-width: 766px) {
@@ -366,7 +436,7 @@ input[type=email] {
 @media (max-width: 650px) {
     .hero-bg {
         width: 100%;
-        height: 65% ! important;
+        height: 30rem ! important;
     }
     
  .hero-content .btn-secondary {
@@ -389,11 +459,12 @@ input[type=email] {
     }
     #appScreen {
         margin-top: 230px;
+        height: 40%;
     }
     
     #keyFeatures {
         height: 50%;
-        margin-bottom: 300px;   
+        margin-bottom: 100px;   
     }
 }
 @media (max-width: 550px) {
@@ -405,13 +476,31 @@ input[type=email] {
         width: 35%;
         margin-top: 120px;
     }
+    .hero-content p {
+        font-size: 14px;
+        line-height: 22px;
+    }
     #appScreen {
         height: 30%;
         margin-top: 300px;
     }
 }
+@media (max-width: 480px) {
+    .hero-bg {
+        width: 100%;
+        height: 18rem ! important;
+    }
+    #appScreen {
+        margin-top: 370px;
+        height: 38%;
+    }
+     #keyFeatures {
+        height: 80%;
+        margin-top: 10px;   
+    }
+}
 
-@media (min-width: 320px) and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 410px) {
     .hero-bg {
         width: 100%;
         height: 16rem ! important;
@@ -420,10 +509,14 @@ input[type=email] {
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 24px;
+        line-height: 36px;
         color: #333333;
         margin-top: 50px;
+    }
+    .hero-content p {
+        font-size: 14px;
+        line-height: 22px;
     }
     .drop1, .drop2, .drop3 {
         width: 20%;
@@ -441,19 +534,65 @@ input[type=email] {
     }
 
     #appScreen {
-        height: 25%;
+        height: 35%;
         margin-top: 430px !important;
     }
+    .screen1 {
+        width: 15%;
+        top: 0;
+        left: 17%;
+    }
+    .screen2 {
+        width: 15%;
+        top: 0;
+        left: 27%;
+    }
+    .screen3 {
+        width: 15%;
+        top: 0;
+        left: 37%;
+    }
+    .screen4 {
+        width: 15%;
+        top: 0;
+        left: 47%;
+    }
+    .screen5 {
+        width: 15%;
+        top: 0;
+        left: 57%; 
+    }
+    .screen6 {
+        width: 15%;
+        top: 0;
+        left: 67%;
+    }
+    .btn-secondary {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        
+    }
+    input[type=email] {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
     #keyFeatures {
-        height: 60%;
         margin-top: 10px;
-        margin-bottom: 200px;   
+        height: 100%;   
+    }
+    #keyFeatures h3 {
+        font-size: 24px;
+        line-height: 36px;
     }
     #keyFeatures img {
         width: 10%;
     }
     #moreInfo h6 {
-        margin-top: 290px;
+        margin-top: 50px;
     }
     
     .l-footer strong {
