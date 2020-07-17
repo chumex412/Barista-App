@@ -1,17 +1,29 @@
-body   {
-    font-family: 'Poppins', sans-serif;
+:root {
     overflow-x: hidden;
 }
+body   {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
 
+hr {
+    width: 50px;
+    border: 3px solid  #381D12;
 
-#Hero  {
+}
+
+.hero-bg  {
     background-image: url('../../images/hero_bg_image.png');
     background-repeat: no-repeat;
     background-position: center right;
     background-size: contain;
     width: 100%;
-    height: 1113px;
+    height: 69.5rem;
 }
+.ball-icon {
+    margin-top: 140px;
+}
+
 .head-name {
     font-style: normal;
     font-weight: bold;
@@ -26,7 +38,7 @@ body   {
     font-size: 48px;
     line-height: 72px;
     color: #333333;
-    margin-top: 280px;
+    margin-top: 150px;
 }
 .hero-content  strong {
     font-style: normal;
@@ -44,66 +56,409 @@ body   {
     color: #333333;
 
 }
-.hero-content img {
-    margin-top: 100px;
+img.img-fluid.s-screen {
+    margin-top: 40px ! important;
+    transition: 1s;
+}
+img.img-fluid.s-screen:hover {
+    transform: scale(1.1);
 }
 
 input[type=email] {
     border-radius: 0px;
-    padding: 0px 180px 0px 30px;
+    width: 100%;
 }
 .btn-secondary {
     background: #381D12;
     border: 1px solid #333333;
-    box-sizing: border-box;
     border-radius: 0px;
 }
+/*#appScreen {
+    height: 30%;
+    margin-top: 500px !important;
+}
+.app-images {
+    margin-top: 600px;
+}*/
+.app-gallery img {
+    transition: 1s;
+}
+.app-gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+#keyFeatures {
+ /*margin-top: 200px;*/   
+}
+#keyFeatures h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+    /*margin-top: 200px;*/
+}
+#keyFeatures h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+}
+#keyFeatures p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
 
+#moreInfo h6 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+    /*margin-top: 250px;*/
+}
+#moreInfo p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+.l-footer {
+    border-top: 1px solid #FFD4C4;
+    padding-top: 10px;
+}
+.l-footer img {
+    width: 25%;
+}
+.l-footer strong {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #381D12;
 
+}
 
-
+@media (max-width: 1300px) {
+    .hero-bg {
+        width: 100%;
+        height: 60rem;
+    }
+}
 
 @media (max-width: 1150px) {
-    #Hero {
+  .hero-bg {
         width: 100%;
-        height: 900px;
+        height: 54rem;
+    }
+  .hero-content h3 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 52px;
+        color: #333333;
+        margin-top: 40px;
+    }
+    .hero-content  strong {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color: #381D12;
+
+    }
+    .hero-content p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #333333;
+
+    }
+    #keyFeatures h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color: #333333;
+    }
+    #keyFeatures h5 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 22px;
+        color: #333333;
+    }
+    #keyFeatures p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #333333;
+    }
+    #keyFeatures img {
+        width: 25%;
     }
 }
 
-@media (max-width: 950px) {
-    #Hero {
+@media (max-width: 1000px) {
+  .hero-bg {
         width: 100%;
-        height: 700px;
+        height: 48rem;
+    }
+    .ball-icon {
+        margin-top: 70px;
+    }
+    .d3-cont {
+        display: none;
     }
 }
 
-@media (max-width: 768px) {
-    #Hero {
+@media (max-width: 900px) {
+   .hero-bg {
         width: 100%;
-        height: 650px;
+        height: 45rem;
+    }
+    .hero-content h3 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 45px;
+        color: #333333;
+        margin-top: 40px;
+    }
+    .hero-content  strong {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: #381D12;
+
+    }
+    .hero-content p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #333333;
+
+    }
+    /*input[type=email] {
+        width: 80%;
+    }
+     .hero-content .btn-secondary {
+        padding-right: 15px;
+    }*/
+    #moreInfo h6 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #333333;
+        /*margin-top: 250px;*/
+    }
+    #moreInfo p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #333333;
+    }
+    .btn-secondary {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    input[type=email] {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+}
+@media (max-width: 850px) {
+    .hero-bg{
+        width: 100%;
+        height: 40rem;
     }
 }
-@media (max-width: 700px) {
-    #Hero {
+@media (max-width: 766px) {
+    .hero-bg {
         width: 100%;
-        height: 550px;
+        height: 35rem ! important;
+    }
+    .hero-content h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 36px;
+        margin-top: 30px;
+    }
+    .drop1, .drop2 {
+        width: 15%;
+    }
+    .d3-cont {
+        display: block;
+    }
+    .hero-bg {
+        width: 100%;
+        height: 65%;
+    }
+    img.img-fluid.s-screen {
+        width: 35%;
+        margin-top: 10px;
+    }
+    #keyFeatures h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 45px;
+        color: #333333;
+    }
+    #keyFeatures h5 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #333333;
+    }
+    #keyFeatures p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #333333;
+    }
+    #keyFeatures img {
+        width: 10%;
+    }
+    .ball-icon {
+        margin-top: 20px;
+    }
+    #appScreen {
+        margin-top: 80px;
+    }
+    .form-row {
+        justify-content: center;
+    }
+    .btn-secondary {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    input[type=email] {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
     }
 }
-@media (max-width: 600px) {
-    #Hero {
+@media (max-width: 650px) {
+    .hero-bg {
         width: 100%;
-        height: 450px;
+        height: 65% ! important;
+    }
+    
+ .hero-content .btn-secondary {
+        margin-bottom: 15px;
+    }
+    .hero-content h3 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 50px;
+        color: #333333;
+        margin-top: 20px;
+    }
+    .drop3 {
+        width: 5%;
+    }
+    img.img-fluid.s-screen {
+        margin-top: 100px ! important;
+    }
+    #appScreen {
+        margin-top: 230px;
+    }
+    
+    #keyFeatures {
+        height: 50%;
+        margin-bottom: 300px;   
     }
 }
-@media (max-width: 500px) {
-    #Hero {
+@media (max-width: 550px) {
+    .hero-bg {
         width: 100%;
-        height: 370px;
+        height: 22rem ! important;
+    }
+    img.img-fluid.s-screen {
+        width: 35%;
+        margin-top: 120px;
+    }
+    #appScreen {
+        height: 30%;
+        margin-top: 300px;
     }
 }
-@media (min-width: 320px) and (max-width: 400px) {
-    #Hero {
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .hero-bg {
         width: 100%;
-        height: 300px;
+        height: 16rem ! important;
     }
+    .hero-content h3 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 50px;
+        color: #333333;
+        margin-top: 50px;
+    }
+    .drop1, .drop2, .drop3 {
+        width: 20%;
+    }
+    img.img-fluid.drop3 {
+        margin-top: 0 ! important;
+        padding-left: 60px;
+    }
+    img.img-fluid.s-screen {
+        width: 55%;
+         margin-top: 70px ! important;
+    }
+    .ball-icon {
+        margin: 10px 0 0 20px ! important;
+    }
+
+    #appScreen {
+        height: 25%;
+        margin-top: 430px !important;
+    }
+    #keyFeatures {
+        height: 60%;
+        margin-top: 10px;
+        margin-bottom: 200px;   
+    }
+    #keyFeatures img {
+        width: 10%;
+    }
+    #moreInfo h6 {
+        margin-top: 290px;
+    }
+    
+    .l-footer strong {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
 }
